@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+    compileOptions.encoding = "GBK"
+
+    defaultConfig {
+        applicationId "com.example.app_1"
+        minSdkVersion 18
+        targetSdkVersion 20
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('src/main/java/core-3.1.1-SNAPSHOT.jar')
+}

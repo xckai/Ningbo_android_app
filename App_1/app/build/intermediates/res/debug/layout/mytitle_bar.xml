@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+   android:background="@color/background_ios"
+
+    >
+    <TextView
+        android:id="@+id/titletext"
+        android:text="宁波市中小企业协同制造平台"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </TextView>
+
+    
+</RelativeLayout><!-- From: file:/E:/App_1/app/src/main/res/layout/mytitle_bar.xml -->

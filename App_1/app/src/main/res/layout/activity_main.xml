@@ -1,0 +1,128 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+
+    tools:context="com.example.app_1.MainActivity" >
+    <RelativeLayout
+        android:id="@+id/myview_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <include layout="@layout/mytitle_bar" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:id="@+id/mainlayout">
+
+
+    <TextView
+        android:id="@+id/EnterpriseID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_above="@+id/UserID"
+          android:layout_marginTop="10dp"
+        android:text="企业ID："
+        android:textSize="@dimen/Defalt" />
+    <EditText
+        android:id="@+id/EnterpriseIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_above="@+id/UserIDText"
+        android:layout_alignLeft="@+id/UserIDText"
+         android:layout_marginTop="10dp"
+         android:ems="10"
+        android:hint="请输入企业ID" />
+        
+<TextView
+        android:id="@+id/UserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_above="@+id/EnterprisePassword"
+        android:layout_marginTop="10dp"
+        android:text="用户ID："
+        android:textSize="@dimen/Defalt" />
+    <EditText
+        android:id="@+id/UserIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/EnterprisePasswordText"
+       android:layout_alignLeft="@+id/EnterprisePasswordText"
+        android:ems="10"
+        android:hint="请输入用户ID" />
+    
+    <TextView
+        android:id="@+id/EnterprisePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+      
+        android:text="密   码 ："
+        android:textSize="@dimen/Defalt" />
+     <EditText
+        android:id="@+id/EnterprisePasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/EnterprisePassword"
+        android:layout_toRightOf="@+id/EnterprisePassword"
+        android:ems="10"
+         android:inputType="textPassword"
+        android:hint="请输入密码" >
+
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+ 	<Button
+     	    android:id="@+id/Login"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_alignLeft="@+id/EnterprisePasswordText"
+     	    android:layout_below="@id/EnterprisePasswordText"
+
+     	    android:text="登录"
+        android:layout_alignBottom="@+id/Cancel" />
+
+     	<Button
+     	    android:id="@+id/Cancel"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	     android:layout_below="@id/EnterprisePasswordText"
+           android:layout_alignRight="@+id/EnterprisePasswordText"
+
+     	    android:text="取消" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:id="@+id/ServerIp"
+        android:text="10.60.146.81:8082/CPCAPPMobile"
+        android:layout_toEndOf="@+id/UserID"
+        android:layout_below="@+id/Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/loginInfo"
+        android:layout_below="@+id/EnterprisePassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/UserID"
+        android:layout_above="@+id/ServerIp" />
+
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>
