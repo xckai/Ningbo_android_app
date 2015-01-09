@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="E:\App_1\app\src\main\java\core-3.1.1-SNAPSHOT.jar"
+        jar="E:\Desktop\project\Ningbo_android_app\App_1\app\src\main\java\core-3.1.1-SNAPSHOT.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8a4e2fa9c2f4372d94faf7e55bbada0ad460d404">
-        <dex dex="E:\App_1\app\build\intermediates\pre-dexed\debug\core-3.1.1-SNAPSHOT-3a4f5cd14dbc7ff4ac744566236949db4d78e9b6.jar" />
+        <dex dex="E:\Desktop\project\Ningbo_android_app\App_1\app\build\intermediates\pre-dexed\debug\core-3.1.1-SNAPSHOT-91bbeada0153ac0d723c18460e6be661ce3a438c.jar" />
     </item>
 
 </items>
